@@ -1,0 +1,11 @@
+{
+    "ack": "0",
+    "category": "Backend_error",
+    "message": "Cart not found",
+    "data": {
+        "_id": "",
+        "guid": "557-065-1599248997721",
+        "store_id": "9611",
+        "items": []
+    }
+}

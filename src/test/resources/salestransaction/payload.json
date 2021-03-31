@@ -1,0 +1,13 @@
+{
+  "transactionDate":    "03/02 02:09 PM",
+  "storeId":            "9611",
+  "cardType":           "VISA",
+  "fdToken":            "7311505143106276",
+  "transactionAmount":  "2.99",
+  "fdAccountId":        "8a7fb291778288c501778436c2e1013f",
+  "orderId":            "1386",
+  "transactionSource":  "SNG",
+  "item_count":         "1",
+  "paymentSource":      "vaulted_account",
+  "GUID":               "557-065-1599248997721"
+}

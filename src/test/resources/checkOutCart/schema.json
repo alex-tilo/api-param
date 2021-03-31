@@ -1,0 +1,182 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack": {"type": "string", "enum": ["0"]},
+    "data": {
+      "type": "object",
+      "properties": {
+        "order_id": {
+          "type": "string"
+        },
+        "item_details": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "added_time_stamp": {
+                  "type": "number"
+                },
+                "last_updated_timestamp": {
+                  "type": "number"
+                },
+                "_id": {
+                  "type": "object",
+                  "properties": {
+                    "$oid": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "$oid"
+                  ]
+                },
+                "item_id": {
+                  "type": "string"
+                },
+                "upc_type": {
+                  "type": "string"
+                },
+                "scan_code": {
+                  "type": "string"
+                },
+                "quantity": {
+                  "type": "integer"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "bag_item": {
+                  "type": "boolean"
+                },
+                "weight_item": {
+                  "type": "boolean"
+                },
+                "jfuOffers": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object"
+                    }
+                  ]
+                },
+                "jfuOfferCount": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "sell_price": {
+                  "type": "number"
+                },
+                "dept": {
+                  "type": "string"
+                },
+                "ext_description": {
+                  "type": "string"
+                },
+                "pos_description": {
+                  "type": "string"
+                },
+                "restricted_item": {
+                  "type": "boolean"
+                },
+                "image_url": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "added_time_stamp",
+                "last_updated_timestamp",
+                "_id",
+                "item_id",
+                "upc_type",
+                "scan_code",
+                "quantity",
+                "status",
+                "bag_item",
+                "weight_item",
+                "jfuOffers",
+                "jfuOfferCount",
+                "text",
+                "sell_price",
+                "dept",
+                "ext_description",
+                "pos_description",
+                "restricted_item",
+                "image_url"
+              ]
+            }
+          ]
+        },
+        "itemCount": {
+          "type": "integer"
+        },
+        "checkout": {
+          "type": "boolean"
+        },
+        "vpos": {
+          "type": "boolean"
+        },
+        "device_id": {
+          "type": "null"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "version":        {"type": ["null", "string"]},
+        "clubcard_nbr":   {"type": "null"},
+        "store_id":       {"type": "string"},
+        "guid":           {"type": "string"},
+        "time_stamp": {
+          "type": "object",
+          "properties": {
+            "$numberLong": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "$numberLong"
+          ]
+        },
+        "transaction_status": {
+          "type": "string"
+        },
+        "_id": {
+          "type": "object",
+          "properties": {
+            "$oid": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "$oid"
+          ]
+        }
+      },
+      "required": [
+        "order_id",
+        "item_details",
+        "itemCount",
+        "checkout",
+        "vpos",
+        "device_id",
+        "platform",
+        "version",
+        "clubcard_nbr",
+        "store_id",
+        "guid",
+        "time_stamp",
+        "transaction_status",
+        "_id"
+      ]
+    },
+    "message": {"type": "string", "enum": ["Checkout Success."]}
+  },
+  "required": [
+    "ack",
+    "data",
+    "message"
+  ]
+}

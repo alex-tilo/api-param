@@ -1,0 +1,12 @@
+{
+  "ack": "1",
+  "errors": [
+    {
+      "code": "269902",
+      "message": "Invalid request format/data.",
+      "type": "First Data error",
+      "vendor": "First Data",
+      "category": "generic_error"
+    }
+  ]
+}

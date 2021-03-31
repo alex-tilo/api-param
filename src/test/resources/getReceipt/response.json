@@ -1,0 +1,87 @@
+{
+    "ack": "0",
+    "data": {
+        "_id": {
+            "$oid": "602c40f7884f2212393c1cfc"
+        },
+        "total_amount": 2.99,
+        "terminal_number": "199",
+        "platform": "ios",
+        "retrieve_barcode_symbology": "Code128",
+        "retrievalReceiptHeader": "\r\n                                      \r\nTHANKS FOR SHOPPING SAFEWAY SCAN & PAY\r\n                                      ",
+        "receipt_json": {
+            "footer": "YOUR CASHIER TODAY WAS SELF",
+            "receiptItemDetailsList": [
+                {
+                    "extendedPrice": 2.99,
+                    "deliveredQty": "1",
+                    "shortDescription": "MONSTER ENERGY SUP",
+                    "departmentNumber": "313",
+                    "itemType": "UNIT",
+                    "unitPrice": 2.99,
+                    "itemId": "7084700003"
+                },
+                {
+                    "extendedPrice": 0,
+                    "deliveredQty": "1",
+                    "shortDescription": "RCYCBLE BAG CHARGE",
+                    "departmentNumber": "301",
+                    "itemType": "UNIT",
+                    "unitPrice": 0.01,
+                    "itemId": "22147",
+                    "departmentName": "GROCERY"
+                }
+            ],
+            "transactionInfo": {
+                "terminal_number": "199",
+                "card_pan_print": "7311500000006276",
+                "transaction_status": "TRANSACTION COMPLETED",
+                "approval_number": "013483",
+                "card_type": "VISA",
+                "transaction_complete_at": "2021-02-16T22:09:05.000Z",
+                "transaction_id": "9"
+            },
+            "receiptTotalResult": {
+                "total": 2.99,
+                "j4uCouponsSavings": 0,
+                "ebtTotal": 0,
+                "totalSavings": 0,
+                "tax": 0,
+                "subTotal": 2.99,
+                "clubCardSavings": 0
+            },
+            "storeTime": "02/16/21 4:09 PM",
+            "userId": "557-065-1599248997721",
+            "orderId": "1386",
+            "header": "THANK YOU FOR SHOPPING U CHECKOUT",
+            "store_address": "Store# 9611"
+        },
+        "store_id": "9611",
+        "receipt": "\r\n                                      \r\nTHANKS FOR SHOPPING SAFEWAY SCAN & PAY\r\n\r\n        MONSTER ENERGY SUP      2.99 S\r\n 1  QTY                               \r\n        RCYCBLE BAG CHARGE      0.00 T\r\n        TAX                     0.00  \r\n   **** BALANCE                 2.99  \r\n\r\n        Mobile Pymt             2.99  \r\n        CHANGE                  0.00  \r\n\r\n02/16/21 16:02 9611 199 9 8832        \r\n                                      \r\n--------------------------------------\r\nYOUR CASHIER TODAY WAS SCAN AND PAY   \r\n\r\n\r\n   HOW WAS YOUR SHOPPING EXPERIENCE?  \r\n        WE VALUE YOUR FEEDBACK!       \r\n   ENTER TO WIN A $100.00 GIFT CARD   \r\nGO TO: www.jewelosco.com/survey       \r\n    ENTER THE SURVEY CODE BELOW:      \r\n        961102/1616:09199/11          \r\n  Thank you for shopping Jewel-Osco  \r\n1-877-505-4040 or visit SAFEWAY.COM\r\n  call 877-276-9637 or JewelOsco.com  \r\n                                      \r\n                                      ",
+        "retrievalReceiptBody": "",
+        "order_id": "1386",
+        "transaction_id": "9",
+        "version": "2.01",
+        "retrieve_barcode_value": "00961119900112102161609",
+        "transaction_status": "TRANSACTION COMPLETED",
+        "store_time": "02/16/21 4:09 PM",
+        "retrievalReceiptTrailer": "\r\n\r\n        Mobile Pymt             2.99  \r\n        CHANGE                  0.00  \r\n\r\n02/16/21 16:02 9611 199 9 8832        \r\n                                      \r\n--------------------------------------\r\nYOUR CASHIER TODAY WAS SCAN AND PAY   \r\n\r\n\r\n   HOW WAS YOUR SHOPPING EXPERIENCE?  \r\n        WE VALUE YOUR FEEDBACK!       \r\n   ENTER TO WIN A $100.00 GIFT CARD   \r\nGO TO: www.jewelosco.com/survey       \r\n    ENTER THE SURVEY CODE BELOW:      \r\n        961102/1616:09199/11          \r\n  Thank you for shopping Jewel-Osco  \r\n1-877-505-4040 or visit SAFEWAY.COM\r\n  call 877-276-9637 or JewelOsco.com  \r\n                                      \r\n                                      ",
+        "item_count": 1,
+        "store_address": "Store# 9611",
+        "lineItemTypeCount": 2,
+        "guid": "557-065-1599248997721",
+        "time_stamp": {
+            "$numberLong": "1613513351770"
+        },
+        "suspend_time": 2422,
+        "retrieval_time": 3094,
+        "suspendReceiptHeader": "\r\n                                      \r\nTHANKS FOR SHOPPING SAFEWAY SCAN & PAY",
+        "suspendReceiptBody": "\r\n        MONSTER ENERGY SUP      2.99 S\r\n 1  QTY                               \r\n        RCYCBLE BAG CHARGE      0.00 T\r\n        TAX                     0.00  \r\n   **** BALANCE                 2.99  ",
+        "suspendReceiptTrailer": "\r\n                                      \r\n02/16/21 16:02 9611 199 9 8832        \r\n                                      \r\n--------------------------------------\r\nYOUR CASHIER TODAY WAS SCAN AND PAY   \r\n\r\n\r\n   HOW WAS YOUR SHOPPING EXPERIENCE?  \r\n        WE VALUE YOUR FEEDBACK!       \r\n   ENTER TO WIN A $100.00 GIFT CARD   \r\nGO TO: www.jewelosco.com/survey       \r\n    ENTER THE SURVEY CODE BELOW:      \r\n        961102/1616:02199/9           \r\n  Thank you for shopping Jewel-Osco  \r\n1-877-505-4040 or visit SAFEWAY.COM\r\n  call 877-276-9637 or JewelOsco.com  \r\n                                      \r\n                                      ",
+        "checkoutToReceiptTime": {
+            "$numberLong": "3384"
+        },
+        "notified": true
+    },
+    "messsage": "Receipt success."
+}

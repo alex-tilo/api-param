@@ -1,0 +1,68 @@
+{
+  "accounts": [
+    {
+      "fdAccountId": "8a7fb291778288c501778436c2e1013f",
+      "type": "CREDIT",
+      "status": "ACTIVE",
+      "credit": {
+        "nameOnCard": "Serge Said",
+        "alias": "6276",
+        "cardType": "VISA",
+        "billingAddress": {
+          "postalCode": "00000"
+        },
+        "expiryDate": {
+          "month": "11",
+          "year": "21",
+          "singleValue": "1121"
+        },
+        "token": {
+          "tokenType": "FORMAT_PRESERVING_MULTI_USE",
+          "tokenProvider": "TRANS_ARMOR",
+          "tokenId": "7311505143106276"
+        }
+      },
+      "token": {
+        "tokenType": "FORMAT_PRESERVING_MULTI_USE",
+        "tokenProvider": "TRANS_ARMOR",
+        "tokenId": "7311505143106276"
+      },
+      "dateCreated": "2021-02-09T00:35:17Z",
+      "dateModified": "2021-02-09T00:35:17Z"
+    },
+    {
+      "fdAccountId": "8a7f028677979c8e0177a7b8c41506d7",
+      "type": "CREDIT",
+      "status": "ACTIVE",
+      "credit": {
+        "nameOnCard": "Test",
+        "alias": "1178",
+        "cardType": "DISCOVER",
+        "billingAddress": {
+          "postalCode": "00000"
+        },
+        "expiryDate": {
+          "month": "12",
+          "year": "21",
+          "singleValue": "1221"
+        },
+        "token": {
+          "tokenType": "FORMAT_PRESERVING_MULTI_USE",
+          "tokenProvider": "TRANS_ARMOR",
+          "tokenId": "2173664945041178"
+        }
+      },
+      "token": {
+        "tokenType": "FORMAT_PRESERVING_MULTI_USE",
+        "tokenProvider": "TRANS_ARMOR",
+        "tokenId": "2173664945041178"
+      },
+      "dateCreated": "2021-02-15T22:03:59Z",
+      "dateModified": "2021-02-15T22:03:59Z"
+    }
+  ],
+  "ack": "0",
+  "hrLimitReached": false,
+  "defaultCard": "8a7fb291778288c501778436c2e1013f",
+  "applePayFlag": false
+}

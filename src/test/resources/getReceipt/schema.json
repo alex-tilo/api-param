@@ -1,0 +1,340 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack": {"type": "string", "enum": ["0"]},
+    "data": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "object",
+          "properties": {
+            "$oid": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "$oid"
+          ]
+        },
+        "total_amount": {
+          "type": "number"
+        },
+        "terminal_number": {
+          "type": "string"
+        },
+        "platform": {
+          "type": "string"
+        },
+        "retrieve_barcode_symbology": {
+          "type": "string"
+        },
+        "retrievalReceiptHeader": {
+          "type": "string"
+        },
+        "receipt_json": {
+          "type": "object",
+          "properties": {
+            "footer": {
+              "type": "string"
+            },
+            "receiptItemDetailsList": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "extendedPrice": {
+                      "type": "number"
+                    },
+                    "deliveredQty": {
+                      "type": "string"
+                    },
+                    "shortDescription": {
+                      "type": "string"
+                    },
+                    "departmentNumber": {
+                      "type": "string"
+                    },
+                    "itemType": {
+                      "type": "string"
+                    },
+                    "unitPrice": {
+                      "type": "number"
+                    },
+                    "itemId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extendedPrice",
+                    "deliveredQty",
+                    "shortDescription",
+                    "departmentNumber",
+                    "itemType",
+                    "unitPrice",
+                    "itemId"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "extendedPrice": {
+                      "type": "integer"
+                    },
+                    "deliveredQty": {
+                      "type": "string"
+                    },
+                    "shortDescription": {
+                      "type": "string"
+                    },
+                    "departmentNumber": {
+                      "type": "string"
+                    },
+                    "itemType": {
+                      "type": "string"
+                    },
+                    "unitPrice": {
+                      "type": "number"
+                    },
+                    "itemId": {
+                      "type": "string"
+                    },
+                    "departmentName": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "extendedPrice",
+                    "deliveredQty",
+                    "shortDescription",
+                    "departmentNumber",
+                    "itemType",
+                    "unitPrice",
+                    "itemId",
+                    "departmentName"
+                  ]
+                }
+              ]
+            },
+            "transactionInfo": {
+              "type": "object",
+              "properties": {
+                "terminal_number": {
+                  "type": "string"
+                },
+                "card_pan_print": {
+                  "type": "string"
+                },
+                "transaction_status": {
+                  "type": "string"
+                },
+                "approval_number": {
+                  "type": "string"
+                },
+                "card_type": {
+                  "type": "string"
+                },
+                "transaction_complete_at": {
+                  "type": "string"
+                },
+                "transaction_id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "terminal_number",
+                "card_pan_print",
+                "transaction_status",
+                "approval_number",
+                "card_type",
+                "transaction_complete_at",
+                "transaction_id"
+              ]
+            },
+            "receiptTotalResult": {
+              "type": "object",
+              "properties": {
+                "total": {
+                  "type": "number"
+                },
+                "j4uCouponsSavings": {
+                  "type": "integer"
+                },
+                "ebtTotal": {
+                  "type": "integer"
+                },
+                "totalSavings": {
+                  "type": "integer"
+                },
+                "tax": {
+                  "type": "integer"
+                },
+                "subTotal": {
+                  "type": "number"
+                },
+                "clubCardSavings": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "total",
+                "j4uCouponsSavings",
+                "ebtTotal",
+                "totalSavings",
+                "tax",
+                "subTotal",
+                "clubCardSavings"
+              ]
+            },
+            "storeTime": {
+              "type": "string"
+            },
+            "userId": {
+              "type": "string"
+            },
+            "orderId": {
+              "type": "string"
+            },
+            "header": {
+              "type": "string"
+            },
+            "store_address": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "footer",
+            "receiptItemDetailsList",
+            "transactionInfo",
+            "receiptTotalResult",
+            "storeTime",
+            "userId",
+            "orderId",
+            "header",
+            "store_address"
+          ]
+        },
+        "store_id": {
+          "type": "string"
+        },
+        "receipt": {
+          "type": "string"
+        },
+        "retrievalReceiptBody": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "string"
+        },
+        "transaction_id": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "retrieve_barcode_value": {
+          "type": "string"
+        },
+        "transaction_status": {
+          "type": "string"
+        },
+        "store_time": {
+          "type": "string"
+        },
+        "retrievalReceiptTrailer": {
+          "type": "string"
+        },
+        "item_count": {
+          "type": "integer"
+        },
+        "store_address": {
+          "type": "string"
+        },
+        "lineItemTypeCount": {
+          "type": "integer"
+        },
+        "guid": {
+          "type": "string"
+        },
+        "time_stamp": {
+          "type": "object",
+          "properties": {
+            "$numberLong": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "$numberLong"
+          ]
+        },
+        "suspend_time": {
+          "type": "integer"
+        },
+        "retrieval_time": {
+          "type": "integer"
+        },
+        "suspendReceiptHeader": {
+          "type": "string"
+        },
+        "suspendReceiptBody": {
+          "type": "string"
+        },
+        "suspendReceiptTrailer": {
+          "type": "string"
+        },
+        "checkoutToReceiptTime": {
+          "type": "object",
+          "properties": {
+            "$numberLong": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "$numberLong"
+          ]
+        },
+        "notified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "_id",
+        "total_amount",
+        "terminal_number",
+        "platform",
+        "retrieve_barcode_symbology",
+        "retrievalReceiptHeader",
+        "receipt_json",
+        "store_id",
+        "receipt",
+        "retrievalReceiptBody",
+        "order_id",
+        "transaction_id",
+        "version",
+        "retrieve_barcode_value",
+        "transaction_status",
+        "store_time",
+        "retrievalReceiptTrailer",
+        "item_count",
+        "store_address",
+        "lineItemTypeCount",
+        "guid",
+        "time_stamp",
+        "suspend_time",
+        "retrieval_time",
+        "suspendReceiptHeader",
+        "suspendReceiptBody",
+        "suspendReceiptTrailer",
+        "checkoutToReceiptTime",
+        "notified"
+      ]
+    },
+    "messsage": {"type": "string", "enum": ["Receipt success."]}
+  },
+  "required": [
+    "ack",
+    "data",
+    "messsage"
+  ]
+}

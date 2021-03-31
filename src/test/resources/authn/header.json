@@ -1,0 +1,9 @@
+{
+  "Authorization": "Basic MG9hZDhhaXd0N1pBN3NXY3owaDc6dGhRaTh6a3gzaVJ4YkpfbDliTno5RzJ3bkR0OXJTcVgyZkxncktwVw==",
+  "Cookie": "JSESSIONID=A8470E8F1D5BFE7B6833ADE67729DBCE",
+  "Host": "abs-qa1.oktapreview.com",
+  "Accept": "application/json",
+  "Content-Type": "application/json",
+  "accept-language": "en-us",
+  "User-Agent" : "UCheckout/1 CFNetwork/1209 Darwin/20.2.0"
+}

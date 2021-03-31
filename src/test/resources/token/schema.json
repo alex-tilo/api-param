@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "token_type":     {"type": "string"},
+    "expires_in":     {"type": "integer", "pattern": "^(900)$" },
+    "access_token":   {"type": "string"},
+    "scope":          {"type": "string"},
+    "refresh_token":  {"type": "string"},
+    "id_token":       {"type": "string"}
+  },
+  "required": [
+    "token_type",
+    "expires_in",
+    "access_token",
+    "scope",
+    "refresh_token",
+    "id_token"
+  ]
+}
+

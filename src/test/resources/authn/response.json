@@ -1,0 +1,28 @@
+{
+    "expiresAt": "2021-03-02T06:24:35.000Z",
+    "status": "SUCCESS",
+    "sessionToken": "20111h_b58DG139D9MROjEG9FEsdfpH-4lxuEEoW2ZGsE8KO64Of8Og",
+    "_embedded": {
+        "user": {
+            "id": "00utrp9i150f2yOdm0h7",
+            "passwordChanged": "2020-09-04T19:49:58.000Z",
+            "profile": {
+                "login": "achztp@gmail.com",
+                "firstName": "ach",
+                "lastName": "ztp",
+                "locale": "en",
+                "timeZone": "America/Los_Angeles"
+            }
+        }
+    },
+    "_links": {
+        "cancel": {
+            "href": "https://abs-qa1.oktapreview.com/api/v1/authn/cancel",
+            "hints": {
+                "allow": [
+                    "POST"
+                ]
+            }
+        }
+    }
+}
