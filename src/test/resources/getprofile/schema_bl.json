@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack": {"type": "string","enum": ["0"]},
+    "code": {"type": "string","enum": ["200"]},
+    "data": {
+      "type": "object",
+      "properties": {
+        "userAllowed": {
+          "type": "boolean"
+        },
+        "customerdetails": {
+          "type": "object",
+          "properties": {
+            "ecomSubscribed": {"type": "boolean", "enum": [false]},
+            "blacklistUser": {"type": "boolean", "enum": [true]}
+          },
+          "required": ["ecomSubscribed","blacklistUser"]
+        },
+        "message": {
+          "type": "object",
+          "properties": {
+            "home": {"type": "string","enum": ["Blacklisted user"]}
+          },
+          "required": ["home"]
+        }
+      },
+      "required": ["userAllowed","customerdetails","message"]
+    }
+  },
+  "required": ["ack","code","data"]
+}

@@ -6,6 +6,7 @@
 				<class name="core.testLogin" />
 				<class name="core.testToken" />
 				<class name="core.testGetProfile" />
+				<class name="core.testGetProfileBL" />
 				<class name="core.testViewCart" />
 				<class name="core.testItemLookup" />
 				<class name="core.testAddItemToCart" />

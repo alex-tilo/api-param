@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack":      {"type": "string", "enum": ["1"]},
+    "code":     {"type": "string", "enum": ["5000"]},
+    "message":  {"type": "string", "enum": ["Invalid req format"]},
+    "vendor":   {"type": "string", "enum": ["Scan_and_go"]},
+    "category": {"type": "string", "enum": ["generic_error"]}
+  },
+  "required": ["ack","code","message","vendor","category"]
+}

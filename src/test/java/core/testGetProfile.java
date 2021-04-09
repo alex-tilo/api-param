@@ -72,7 +72,7 @@ public class testGetProfile {
 				.and()
 				.statusCode(200)
 				.and()
-				.header("Content-Length", Integer::parseInt, lessThan(2000))
+				.header("Content-Length", Integer::parseInt, lessThan(3000))
 				.and()
 				.header("Content-Type", "application/json; charset=utf-8")
 				.and()

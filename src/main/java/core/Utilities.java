@@ -1,9 +1,7 @@
 package core;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
 import java.util.*;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,6 +23,18 @@ public class Utilities {
     	String payload = "payload";
     	String ext = ".json";
         return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload + ext)));
+    }
+    
+    public String readJSONFileAsStringEH(String api) throws Exception {
+    	String path = "src/test/resources";
+    	String payload = "payload_bl";
+    	String ext = ".json";
+        return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload + ext)));
+    }
+    
+    public String readJSONFile(String api, String payload) throws Exception {
+    	String path = "src/test/resources";
+        return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload)));
     }
     
     public String readTextFileAsString(String api) throws Exception {

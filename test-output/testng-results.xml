@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6847" started-at="2021-03-29T21:09:42 PDT" finished-at="2021-03-29T21:09:49 PDT">
+  <suite name="Default suite" duration-ms="6869" started-at="2021-04-08T23:02:37 PDT" finished-at="2021-04-08T23:02:43 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6847" started-at="2021-03-29T21:09:42 PDT" finished-at="2021-03-29T21:09:49 PDT">
-      <class name="core.testCheckOutCart">
-        <test-method status="PASS" signature="schemaItemLookup()[pri:1, instance:core.testCheckOutCart@476aac9]" name="schemaItemLookup" duration-ms="6696" started-at="2021-03-29T21:09:42 PDT" description="API Validation checkOutCart" finished-at="2021-03-29T21:09:49 PDT">
+    <test name="Default test" duration-ms="6869" started-at="2021-04-08T23:02:37 PDT" finished-at="2021-04-08T23:02:43 PDT">
+      <class name="core.testAddItemToCartEH">
+        <test-method status="PASS" signature="schemaGetProfileEH()[pri:1, instance:core.testAddItemToCartEH@1eba372c]" name="schemaGetProfileEH" duration-ms="6729" started-at="2021-04-08T23:02:37 PDT" description="API Validation addItemToCart Error Handling" finished-at="2021-04-08T23:02:43 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaItemLookup -->
-      </class> <!-- core.testCheckOutCart -->
+        </test-method> <!-- schemaGetProfileEH -->
+      </class> <!-- core.testAddItemToCartEH -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

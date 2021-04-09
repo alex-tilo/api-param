@@ -1,0 +1,42 @@
+<div>POST to https://retail-api.azure-api.net:443/retailoperationsqa/getprofile</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;app&quot;: &quot;scanandgo&quot;,
+    &quot;email&quot;: &quot;qa@gmail.com&quot;,
+    &quot;longitude&quot;: &quot;-121.927389&quot;,
+    &quot;platform&quot;: &quot;ios&quot;,
+    &quot;banner&quot;: &quot;safeway&quot;,
+    &quot;GUID&quot;: &quot;557-065-1599248997721&quot;,
+    &quot;version&quot;: &quot;2.01&quot;,
+    &quot;latitude&quot;: &quot;37.706018&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>User-Agent: UCheckout/2.01 (com.safeway.scanandgoent; build:1; iOS 14.3.0) Alamofire/4.9.0</div>
+        <div>guid: 557-065-1599248997721</div>
+        <div>Ocp-Apim-Subscription-key: 2adea0f3833f433984136e291fbab38b</div>
+        <div>Accept: application/json</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;https://retail-api.azure-api.net:443/retailoperationsqa/getprofile&#39; -H &#39;User-Agent: UCheckout/2.01 (com.safeway.scanandgoent; build:1; iOS 14.3.0) Alamofire/4.9.0&#39; -H &#39;guid: 557-065-1599248997721&#39; -H &#39;Ocp-Apim-Subscription-key: 2adea0f3833f433984136e291fbab38b&#39; -H &#39;Accept: application/json&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;app&quot;: &quot;scanandgo&quot;,
+    &quot;email&quot;: &quot;qa@gmail.com&quot;,
+    &quot;longitude&quot;: &quot;-121.927389&quot;,
+    &quot;platform&quot;: &quot;ios&quot;,
+    &quot;banner&quot;: &quot;safeway&quot;,
+    &quot;GUID&quot;: &quot;557-065-1599248997721&quot;,
+    &quot;version&quot;: &quot;2.01&quot;,
+    &quot;latitude&quot;: &quot;37.706018&quot;
+}&#39;
+</div>

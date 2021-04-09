@@ -2,7 +2,9 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "ack": {"type": "string","pattern": "(0|1)"},
+    "ack": {
+      "type": "string"
+    },
     "code": {
       "type": "string"
     },
@@ -18,6 +20,12 @@
         "customerdetails": {
           "type": "object",
           "properties": {
+            "ecomSubscribed": {
+              "type": "boolean"
+            },
+            "blacklistUser": {
+              "type": "boolean"
+            },
             "itemLimit": {
               "type": "integer"
             },
@@ -26,6 +34,8 @@
             }
           },
           "required": [
+            "ecomSubscribed",
+            "blacklistUser",
             "itemLimit",
             "userLevel"
           ]
@@ -141,9 +151,6 @@
             "scanditLicenseKey": {
               "type": "string"
             },
-            "backupScanditKey": {
-              "type": "string"
-            },
             "OKTAClientId": {
               "type": "string"
             },
@@ -191,7 +198,6 @@
             "timeout",
             "_id",
             "scanditLicenseKey",
-            "backupScanditKey",
             "OKTAClientId",
             "OKTASecret",
             "OKTAAuthorizationId",
@@ -211,12 +217,12 @@
         "message": {
           "type": "object",
           "properties": {
-            "alert": {
+            "home": {
               "type": "string"
             }
           },
           "required": [
-            "alert"
+            "home"
           ]
         }
       },

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.testGetAllAccounts">
+      <class name="core.testAddItemToCartEH">
         <methods>
-          <include name="schemaGetProfile"/>
+          <include name="schemaGetProfileEH"/>
         </methods>
-      </class> <!-- core.testGetAllAccounts -->
+      </class> <!-- core.testAddItemToCartEH -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
