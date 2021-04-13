@@ -124,7 +124,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.App</mainClass>
+							<mainClass>core.Main</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

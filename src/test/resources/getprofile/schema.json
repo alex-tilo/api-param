@@ -11,9 +11,6 @@
     "data": {
       "type": "object",
       "properties": {
-        "sngStoreHours": {
-          "type": "boolean"
-        },
         "userAllowed": {
           "type": "boolean"
         },
@@ -25,193 +22,11 @@
             },
             "blacklistUser": {
               "type": "boolean"
-            },
-            "itemLimit": {
-              "type": "integer"
-            },
-            "userLevel": {
-              "type": "string"
             }
           },
           "required": [
             "ecomSubscribed",
-            "blacklistUser",
-            "itemLimit",
-            "userLevel"
-          ]
-        },
-        "stores": {
-          "type": "object",
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "storeId": {
-              "type": "string"
-            },
-            "postCode": {
-              "type": "string"
-            },
-            "city": {
-              "type": "string"
-            },
-            "state": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            },
-            "phone": {
-              "type": "string"
-            },
-            "latitude": {
-              "type": "string"
-            },
-            "longitude": {
-              "type": "string"
-            },
-            "divName": {
-              "type": "string"
-            },
-            "divNumber": {
-              "type": "string"
-            },
-            "storeRadius": {
-              "type": "integer"
-            },
-            "userSupportLevel": {
-              "type": "string"
-            },
-            "restrictedItemsAllowed": {
-              "type": "boolean"
-            },
-            "maxItemsAllowed": {
-              "type": "integer"
-            },
-            "sngStoreHours": {
-              "type": "string"
-            },
-            "sngEmpEnabled": {
-              "type": "boolean"
-            },
-            "sngEliteEnabled": {
-              "type": "boolean"
-            },
-            "sngEcommEnabled": {
-              "type": "boolean"
-            },
-            "sngCustStoreEnabled": {
-              "type": "boolean"
-            },
-            "sngEnabled": {
-              "type": "boolean"
-            }
-          },
-          "required": [
-            "name",
-            "storeId",
-            "postCode",
-            "city",
-            "state",
-            "address",
-            "phone",
-            "latitude",
-            "longitude",
-            "divName",
-            "divNumber",
-            "storeRadius",
-            "userSupportLevel",
-            "restrictedItemsAllowed",
-            "maxItemsAllowed",
-            "sngStoreHours",
-            "sngEmpEnabled",
-            "sngEliteEnabled",
-            "sngEcommEnabled",
-            "sngCustStoreEnabled",
-            "sngEnabled"
-          ]
-        },
-        "appSettings": {
-          "type": "object",
-          "properties": {
-            "timeout": {
-              "type": "object",
-              "properties": {
-                "default": {
-                  "type": "integer"
-                }
-              },
-              "required": [
-                "default"
-              ]
-            },
-            "_id": {
-              "type": "string"
-            },
-            "scanditLicenseKey": {
-              "type": "string"
-            },
-            "OKTAClientId": {
-              "type": "string"
-            },
-            "OKTASecret": {
-              "type": "string"
-            },
-            "OKTAAuthorizationId": {
-              "type": "string"
-            },
-            "platform": {
-              "type": "string"
-            },
-            "version": {
-              "type": "string"
-            },
-            "forceUpdateFlag": {
-              "type": "boolean"
-            },
-            "app": {
-              "type": "string"
-            },
-            "maxItemsAllowed": {
-              "type": "integer"
-            },
-            "userSupportLevel": {
-              "type": "string"
-            },
-            "tncURL": {
-              "type": "string"
-            },
-            "splTncURL": {
-              "type": "string"
-            },
-            "updateMessage": {
-              "type": "string"
-            },
-            "azureSubscriptionKey": {
-              "type": "string"
-            },
-            "loyaltySubscription": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "timeout",
-            "_id",
-            "scanditLicenseKey",
-            "OKTAClientId",
-            "OKTASecret",
-            "OKTAAuthorizationId",
-            "platform",
-            "version",
-            "forceUpdateFlag",
-            "app",
-            "maxItemsAllowed",
-            "userSupportLevel",
-            "tncURL",
-            "splTncURL",
-            "updateMessage",
-            "azureSubscriptionKey",
-            "loyaltySubscription"
+            "blacklistUser"
           ]
         },
         "message": {
@@ -227,11 +42,8 @@
         }
       },
       "required": [
-        "sngStoreHours",
         "userAllowed",
         "customerdetails",
-        "stores",
-        "appSettings",
         "message"
       ]
     }

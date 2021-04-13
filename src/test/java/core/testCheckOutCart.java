@@ -7,7 +7,6 @@ import io.restassured.response.Response;
 import org.testng.annotations.*;
 import java.io.*;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.*;
@@ -82,7 +81,8 @@ public class testCheckOutCart {
 				.and()
 				.header("Vary", containsString("Accept-Encoding"))
 				.and()
-				.body(matchesJsonSchemaInClasspath(path + "/schema.json"))
+//				.body(matchesJsonSchemaInClasspath(path + "/schema.json"))
+				.body(matchesJsonSchemaInClasspath(path + "/schema_eh.json"))
 				.extract().response();
 	        } 
     	catch (Exception e) {e.printStackTrace();}

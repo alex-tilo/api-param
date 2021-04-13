@@ -5,7 +5,7 @@
     <classes>
       <class name="core.testAddItemToCartEH">
         <methods>
-          <include name="schemaGetProfileEH"/>
+          <include name="schemaGetProfileEH" invocation-numbers="3"/>
         </methods>
       </class> <!-- core.testAddItemToCartEH -->
     </classes>

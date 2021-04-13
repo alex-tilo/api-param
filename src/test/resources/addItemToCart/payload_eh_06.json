@@ -1,0 +1,12 @@
+{ 
+	"item_id": "0000000002225", 
+    "quantity": 1, 
+    "upc_type": "plu", 
+    "scan_code":"2225", 
+    "bag_item":false, 
+    "weight_item":false, 
+    "promoOfferPrice":12, 
+    "jfuOfferCount":12, 
+    "clubPrice":[1,2], 
+    "jfuOffers":[1,2] 
+} 
