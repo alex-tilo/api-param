@@ -3,7 +3,9 @@
 	<suite name="Scan and Pay">
 		<test name="API Validation" preserve-order="true" >
 			<classes>
+				<class name="core.testGetProfileBL" />
 				<class name="core.testItemLookupError" />
+				<class name="core.testAddItemToCartEH" />
 			</classes>
 	</test>
 </suite>

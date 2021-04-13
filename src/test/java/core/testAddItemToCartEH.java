@@ -44,15 +44,28 @@
 				RestAssured.basePath 	= env;
 				RestAssured.port 		= Integer.parseInt(port);
 		}
+		
+		
+	    @DataProvider(name="scenarios")
+	    public Object[][] getDataFromDataprovider(){
+	    return new Object[][] 
+	    	{
+	            { "eh_01"},
+	            { "eh_02"},
+	            { "eh_03"}
+	        };
 
-		@Test(enabled = true, priority = 1, description = "API Validation addItemToCart Error Handling")
+	    }
+
+		@Test(dataProvider="scenarios", enabled = true, priority = 1, description = "API Validation addItemToCart Error Handling")
 		@Description(
 						"<b>URI: </b> https://retail-api.azure-api.net/ <br />" + 
 						"<b>Port: </b> 443 <br />" +
 						"<b>Environment: </b> QA [scanandgoQaJS] <br />"
 					)
-		public void schemaGetProfileEH() throws Exception {
-			String scenario = "eh_03";
+		public void schemaGetProfileEH(String testcase) throws Exception {
+//			String scenario = "eh_03";
+			String scenario = testcase;
 			
 			setup(config, environment);
 		    try {
