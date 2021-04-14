@@ -10,7 +10,7 @@ pipeline {
     
     stages {
         stage('API Testing') {
-            tools {maven 'Maven_3.6.0'; jdk 'JDK 1.8.0_281'}
+            //tools {maven 'Maven_3.6.0'; jdk 'JDK 1.8.0_281'}
             steps {
                 git branch: "${params.branch}", poll: false, url: "https://${params.token}@${params.repo}"
                 sh "mvn clean site -Dsuite=${params.scenario}.xml -Denv=${params.environment}"
