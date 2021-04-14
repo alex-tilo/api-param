@@ -1,17 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6965" started-at="2021-04-12T17:54:45 PDT" finished-at="2021-04-12T17:54:52 PDT">
+  <suite name="Default suite" duration-ms="8473" started-at="2021-04-12T18:05:59 PDT" finished-at="2021-04-12T18:06:07 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6965" started-at="2021-04-12T17:54:45 PDT" finished-at="2021-04-12T17:54:52 PDT">
-      <class name="core.testCheckOutCart">
-        <test-method status="PASS" signature="schemaItemLookup()[pri:1, instance:core.testCheckOutCart@4efcf8a]" name="schemaItemLookup" duration-ms="6816" started-at="2021-04-12T17:54:45 PDT" description="API Validation checkOutCart" finished-at="2021-04-12T17:54:52 PDT">
+    <test name="Default test" duration-ms="8473" started-at="2021-04-12T18:05:59 PDT" finished-at="2021-04-12T18:06:07 PDT">
+      <class name="core.testAddItemToCartEH">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="4634" started-at="2021-04-12T18:05:59 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:03 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_01]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaItemLookup -->
-      </class> <!-- core.testCheckOutCart -->
+        </test-method> <!-- schemaGetProfileEH -->
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="677" started-at="2021-04-12T18:06:03 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:04 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaGetProfileEH -->
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="909" started-at="2021-04-12T18:06:04 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:05 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_03]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaGetProfileEH -->
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="673" started-at="2021-04-12T18:06:05 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:06 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_04]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaGetProfileEH -->
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="611" started-at="2021-04-12T18:06:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:06 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_05]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaGetProfileEH -->
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="785" started-at="2021-04-12T18:06:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:07 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaGetProfileEH -->
+      </class> <!-- core.testAddItemToCartEH -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

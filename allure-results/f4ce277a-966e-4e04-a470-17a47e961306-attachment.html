@@ -1,0 +1,39 @@
+<div>PUT to https://retail-api.azure-api.net:443/scanandgoQaJS/addItemToCart</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+    {
+    &quot;item_id&quot;: &quot;0000000004225&quot;,
+    &quot;quantity&quot;: 0,
+    &quot;upc_type&quot;: &quot;plu&quot;,
+    &quot;scan_code&quot;: &quot;4225&quot;
+}
+    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>app: sng</div>
+        <div>Ocp-Apim-Subscription-key: 2adea0f3833f433984136e291fbab38b</div>
+        <div>Accept: application/json</div>
+        <div>User-Agent: UCheckout/2.01 (com.safeway.scanandgoent; build:1; iOS 14.3.0) Alamofire/4.9.0</div>
+        <div>oktatoken: eyJraWQiOiJHT1RLUXY2NG40N3ZRVjVuaGNGSVVveVNtaWhtQTM5V0N4TFNxVXY4WFVrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk9pdlZvM05yd2F3eVN2X3ZleThzdk9VdGJaYTBuYW1ZUUdpa2VSTHZQcWMub2FyenlnazNwbHN0TVhnSVMwaDYiLCJpc3MiOiJodHRwczovL2Ficy1xYTEub2t0YXByZXZpZXcuY29tL29hdXRoMi9hdXNkdnV5Y3VsUklZaXRYZzBoNyIsImF1ZCI6IkFsYmVydHNvbnMiLCJpYXQiOjE2MTgyNzUzMjIsImV4cCI6MTYxODI3NjIyMiwiY2lkIjoiMG9hZDhhaXd0N1pBN3NXY3owaDciLCJ1aWQiOiIwMHV0cnA5aTE1MGYyeU9kbTBoNyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsInByb2ZpbGUiLCJvcGVuaWQiXSwiemlwIjoiNjA2NTciLCJzdWIiOiJhY2h6dHBAZ21haWwuY29tIiwiaGlkIjoiNzI5MDA1ODU1MDYyIiwiZG5tIjoiYWNoIiwiYWxuIjoiNDkxMjgwMjE2MzgiLCJnaWQiOiI1NTctMDY1LTE1OTkyNDg5OTc3MjEiLCJmbm0iOiJhY2giLCJlY2MiOiIiLCJsbm0iOiJ6dHAiLCJqcHIiOiIiLCJ1dWlkIjoiYmYyMGU1ZWEtNTE0ZS00ZjEzLWFiMDktZmQ4M2E3NzhiYmU3IiwiYmFuIjoidm9ucyIsInN0ciI6IjM1MTQiLCJwaG4iOiIzNjEyMjgzNDM1IiwiYmlkIjoiIn0.JiRI6FLdKLHDgwakEJMBEmAHZwlJod-ZcgDIJ86tGqm8ZFWfrA1xXaJBuwmdPS4IDNBhtQkhGP2ACaFoM69Vs-3zjwZz0dSbrSCL15Jp02ncHZkpVm8GpSIcnBwEyDKeCbaoTvVZ5p-gI3sMJ5ODhIOPfYSv2KUKbqz9fewHK7Y6g9Ekw6kthEI5ngm0VgNJXrx1igdumvMTlSwUmyc6OHze2Wn_ZLz26S7_E4x58X3p18coJiF4XRj7utbKZhkXjB-tvZT6Qt_dG5LR28SSMRM-X6ty-S1Sf8w91Cnir2ZBDUzOuUnOEW5CWwX9wbSJwWMFEQlNx1xYxfJH7mObkg</div>
+        <div>Host: retail-api.azure-api.net</div>
+        <div>Accept-Language: en-US;q=1.0, ru-US;q=0.9</div>
+        <div>version: 2.01</div>
+        <div>platform: ios</div>
+        <div>Content-Type: application/json; charset=UTF-8</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X PUT &#39;https://retail-api.azure-api.net:443/scanandgoQaJS/addItemToCart&#39; -H &#39;app: sng&#39; -H &#39;Ocp-Apim-Subscription-key: 2adea0f3833f433984136e291fbab38b&#39; -H &#39;Accept: application/json&#39; -H &#39;User-Agent: UCheckout/2.01 (com.safeway.scanandgoent; build:1; iOS 14.3.0) Alamofire/4.9.0&#39; -H &#39;oktatoken: eyJraWQiOiJHT1RLUXY2NG40N3ZRVjVuaGNGSVVveVNtaWhtQTM5V0N4TFNxVXY4WFVrIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULk9pdlZvM05yd2F3eVN2X3ZleThzdk9VdGJaYTBuYW1ZUUdpa2VSTHZQcWMub2FyenlnazNwbHN0TVhnSVMwaDYiLCJpc3MiOiJodHRwczovL2Ficy1xYTEub2t0YXByZXZpZXcuY29tL29hdXRoMi9hdXNkdnV5Y3VsUklZaXRYZzBoNyIsImF1ZCI6IkFsYmVydHNvbnMiLCJpYXQiOjE2MTgyNzUzMjIsImV4cCI6MTYxODI3NjIyMiwiY2lkIjoiMG9hZDhhaXd0N1pBN3NXY3owaDciLCJ1aWQiOiIwMHV0cnA5aTE1MGYyeU9kbTBoNyIsInNjcCI6WyJvZmZsaW5lX2FjY2VzcyIsInByb2ZpbGUiLCJvcGVuaWQiXSwiemlwIjoiNjA2NTciLCJzdWIiOiJhY2h6dHBAZ21haWwuY29tIiwiaGlkIjoiNzI5MDA1ODU1MDYyIiwiZG5tIjoiYWNoIiwiYWxuIjoiNDkxMjgwMjE2MzgiLCJnaWQiOiI1NTctMDY1LTE1OTkyNDg5OTc3MjEiLCJmbm0iOiJhY2giLCJlY2MiOiIiLCJsbm0iOiJ6dHAiLCJqcHIiOiIiLCJ1dWlkIjoiYmYyMGU1ZWEtNTE0ZS00ZjEzLWFiMDktZmQ4M2E3NzhiYmU3IiwiYmFuIjoidm9ucyIsInN0ciI6IjM1MTQiLCJwaG4iOiIzNjEyMjgzNDM1IiwiYmlkIjoiIn0.JiRI6FLdKLHDgwakEJMBEmAHZwlJod-ZcgDIJ86tGqm8ZFWfrA1xXaJBuwmdPS4IDNBhtQkhGP2ACaFoM69Vs-3zjwZz0dSbrSCL15Jp02ncHZkpVm8GpSIcnBwEyDKeCbaoTvVZ5p-gI3sMJ5ODhIOPfYSv2KUKbqz9fewHK7Y6g9Ekw6kthEI5ngm0VgNJXrx1igdumvMTlSwUmyc6OHze2Wn_ZLz26S7_E4x58X3p18coJiF4XRj7utbKZhkXjB-tvZT6Qt_dG5LR28SSMRM-X6ty-S1Sf8w91Cnir2ZBDUzOuUnOEW5CWwX9wbSJwWMFEQlNx1xYxfJH7mObkg&#39; -H &#39;Host: retail-api.azure-api.net&#39; -H &#39;Accept-Language: en-US;q=1.0, ru-US;q=0.9&#39; -H &#39;version: 2.01&#39; -H &#39;platform: ios&#39; -H &#39;Content-Type: application/json; charset=UTF-8&#39; -d &#39;{
+    &quot;item_id&quot;: &quot;0000000004225&quot;,
+    &quot;quantity&quot;: 0,
+    &quot;upc_type&quot;: &quot;plu&quot;,
+    &quot;scan_code&quot;: &quot;4225&quot;
+}&#39;
+</div>
