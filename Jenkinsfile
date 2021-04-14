@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { node { label 'pcf-build-node' } }
     parameters {
         choice(name: 'environment', choices: ['qa', 'prod'], description: 'Environment')
         choice(name: 'scenario', choices: ['happy_path', 'error_handling'], description: 'Scenario')
