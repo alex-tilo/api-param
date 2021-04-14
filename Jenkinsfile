@@ -7,8 +7,15 @@ pipeline {
         string(name: 'branch', defaultValue: 'master', description: 'GitHub Branch')
         string(name: 'token', defaultValue: '73137bdaf4714198bd43ceaa414faee8f12e4195', description: 'GitHub Token')
     }
-    
+    triggers {
+        cron('0 6 * * *')
+    }
     stages {
+        stage ('Clean Workspace') {
+            steps {
+                deleteDir()
+            }
+        }
         stage('API Testing') {
             //tools {maven 'Maven_3.6.0'; jdk 'JDK 1.8.0_281'}
             steps {
@@ -21,9 +28,9 @@ pipeline {
                         properties: [],
                         reportBuildPolicy: 'ALWAYS',
                         results: [[path: 'target/allure-results']]
-                          ])
-                        }
-                    }
+                    ])
                 }
+            }
         }
+    }
 }
