@@ -1,10 +1,12 @@
 package core;
 
-import java.lang.reflect.Method;
 import org.testng.annotations.DataProvider;
+import java.lang.reflect.Method;
 
 public class DataproviderClass {
-    @DataProvider(name="scenarios")
+	
+    @DataProvider (name="scenarios")
+    
     public Object[][] getDataFromDataprovider(Method m){
     if(m.getName().equalsIgnoreCase("schemaGetProfileEH")){
     return new Object[][] 

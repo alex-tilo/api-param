@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8473" started-at="2021-04-12T18:05:59 PDT" finished-at="2021-04-12T18:06:07 PDT">
+  <suite name="Default suite" duration-ms="25870" started-at="2021-04-14T14:00:41 PDT" finished-at="2021-04-14T14:01:07 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8473" started-at="2021-04-12T18:05:59 PDT" finished-at="2021-04-12T18:06:07 PDT">
+    <test name="Default test" duration-ms="25870" started-at="2021-04-14T14:00:41 PDT" finished-at="2021-04-14T14:01:07 PDT">
       <class name="core.testAddItemToCartEH">
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="4634" started-at="2021-04-12T18:05:59 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:03 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="14810" started-at="2021-04-14T14:00:41 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:00:56 PDT">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaGetProfileEH -->
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="677" started-at="2021-04-12T18:06:03 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:04 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="5438" started-at="2021-04-14T14:00:56 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:01:01 PDT">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaGetProfileEH -->
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="909" started-at="2021-04-12T18:06:04 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:05 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="4364" started-at="2021-04-14T14:01:01 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:01:06 PDT">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaGetProfileEH -->
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="673" started-at="2021-04-12T18:06:05 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:06 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="183" started-at="2021-04-14T14:01:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:01:06 PDT">
           <params>
             <param index="0">
               <value>
@@ -51,7 +51,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaGetProfileEH -->
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="611" started-at="2021-04-12T18:06:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:06 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="436" started-at="2021-04-14T14:01:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:01:06 PDT">
           <params>
             <param index="0">
               <value>
@@ -62,7 +62,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaGetProfileEH -->
-        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@459f7aa3]" name="schemaGetProfileEH" duration-ms="785" started-at="2021-04-12T18:06:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-12T18:06:07 PDT">
+        <test-method status="PASS" signature="schemaGetProfileEH(java.lang.String)[pri:1, instance:core.testAddItemToCartEH@60cf80e7]" name="schemaGetProfileEH" duration-ms="465" started-at="2021-04-14T14:01:06 PDT" description="API Validation addItemToCart Error Handling" data-provider="scenarios" finished-at="2021-04-14T14:01:07 PDT">
           <params>
             <param index="0">
               <value>
