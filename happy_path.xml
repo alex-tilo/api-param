@@ -12,6 +12,7 @@
 				<class name="core.testAddItemToCart" />
 				<class name="core.testGetAllAccounts" />
 				<class name="core.testCheckOutCart" />
+				<class name="core.testAddItemToCart" />
 				<class name="core.testGetReceipt" />
 			</classes>
 	</test>

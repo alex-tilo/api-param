@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties":{ 
+    "ack":      {"type": "string", "enum":["0"]},
+    "message":  {"type": "string", "enum":["Receipt Not Audited"]}
+   },
+    "required": ["ack","message"]
+}

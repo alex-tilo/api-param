@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["ack","data"],
+  "properties": {
+    "ack":      {"type": "string", "enum": ["0"]},
+    "data": {"type": "object","required":["message", "cartCount"], "properties":{
+         "message": {"type":"string", "enum":["Cart audited"]},
+         "cartCount":{"type":"string", "enum":["0"]}   
+    }
+  }
+
+  }
+}

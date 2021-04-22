@@ -6,6 +6,7 @@
 				<class name="core.testGetProfileBL" />
 				<class name="core.testItemLookupError" />
 				<class name="core.testAddItemToCartEH" />
+				<class name="core.testAuditCartsEH" />
 			</classes>
 	</test>
 </suite>

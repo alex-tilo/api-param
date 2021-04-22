@@ -82,7 +82,7 @@ public class testCheckOutCart {
 				.header("Vary", containsString("Accept-Encoding"))
 				.and()
 //				.body(matchesJsonSchemaInClasspath(path + "/schema.json"))
-				.body(matchesJsonSchemaInClasspath(path + "/schema_eh.json"))
+//				.body(matchesJsonSchemaInClasspath(path + "/schema_eh.json"))
 				.extract().response();
 	        } 
     	catch (Exception e) {e.printStackTrace();}

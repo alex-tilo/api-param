@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": ["ack","data"],
+  "properties": {
+    "ack":      {"type": "string", "enum": ["0"]},
+    "data":     {"type": "object",  "required": ["cartCount","checkOutCount", "mustScan", "carts"], "properties": {
+    "cartCount": {"type": "integer"},
+    "checkOutCount": {"type": "integer"},
+    "mustScan": {"type": "integer"},
+    "carts": {"type": "array","items": [
+        {
+          "type": "object",
+          
+          "properties": {
+            "order_id":  {"type": "string", "enum": ["32852"]},
+            "quantity":     {"type": "string", "enum": ["13"]},
+            "total_price": {"type": "string", "enum": ["29.71"]},
+            "time_stamp":   {"type": "string", "enum": ["1616969569000"]}
+          }
+         
+        }
+      ]
+    }
+  }
+}
+}
+}
