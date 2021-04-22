@@ -56,7 +56,7 @@ public class testAuditCartsEH {
 		RestAssured.port = Integer.parseInt(port);
 	}
 
-	@Test(dataProvider = "scenarios", dataProviderClass = DataFeed.class, enabled = true, priority = 1, description = "API Validation auditCart")
+	@Test(dataProvider = "scenarios", dataProviderClass = DataFeed.class, enabled = true, priority = 1, description = "API Validation auditCart Error Handling")
 	@Description("<b>URI: </b> https://retail-api.azure-api.net/ <br />" + "<b>Port: </b> 443 <br />"
 			+ "<b>Environment: </b> QA [scanandgoQaJS]<br />")
 	public void schemaAuditCarts(String testcase) throws Exception {
