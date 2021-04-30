@@ -16,8 +16,8 @@ public class testGetReceipt {
 
 	String environment 	= null;
 	String config 		= "config.properties";
-	String api 			= "getReceipt";
-	String path 		= "getReceipt";
+	String api 			= "getreceipt";
+	String path 		= "getreceipt";
 	
 	Utilities u = new Utilities();
 	

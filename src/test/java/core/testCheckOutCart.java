@@ -15,8 +15,8 @@ public class testCheckOutCart {
 
 	String environment 	= null;
 	String config 		= "config.properties";
-	String api 			= "checkOutCart";
-	String path 		= "checkOutCart";
+	String api 			= "checkoutcart";
+	String path 		= "checkoutcart";
 	
 	Utilities u = new Utilities();
 	

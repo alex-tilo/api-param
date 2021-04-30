@@ -16,8 +16,8 @@
 		
 		String environment 	= null;
 		String config 		= "config.properties";
-		String api 			= "clearCart";
-		String path 		= "clearCart";
+		String api 			= "clearcart";
+		String path 		= "clearcart";
 		
 		Utilities u = new Utilities();
 		

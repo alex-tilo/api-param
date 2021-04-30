@@ -16,8 +16,8 @@
 		
 		String environment 	= null;
 		String config 		= "config.properties";
-		String api 			= "addItemToCart";
-		String path 		= "addItemToCart";
+		String api 			= "addItemtocart";
+		String path 		= "addItemtocart";
 		
 		Utilities u = new Utilities();
 		

@@ -21,8 +21,8 @@ public class testAuditCartsEH {
 
 	String environment = null;
 	String config = "config.properties";
-	String api = "auditCart";
-	String path = "auditCart";
+	String api = "auditcart";
+	String path = "auditcart";
 
 	Utilities u = new Utilities();
 
