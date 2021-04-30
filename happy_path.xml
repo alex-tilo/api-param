@@ -9,16 +9,15 @@
 				<class name="core.testGetProfileBL" />
 				<class name="core.testViewCart" />
 				<class name="core.testItemLookup" />
+				<class name="core.testClubPriceLookUp" />
 				<class name="core.testAddItemToCart" />
+				<class name="core.testClearCart" />
 				<class name="core.testGetAllAccounts" />
 				<class name="core.testCheckOutCart" />
 				<class name="core.testAddItemToCart" />
-				<class name="core.testGetReceipt" />
-
 				<class name="core.testRemoveItem" />
-				<class name="core.testClubPriceLookUp" />
+				<class name="core.testGetReceipt" />
 				<class name="core.testFeedBack" />
-				<class name="core.testClearCart" />
 			</classes>
 	</test>
 </suite>

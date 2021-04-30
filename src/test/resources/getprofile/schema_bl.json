@@ -20,9 +20,7 @@
         },
         "message": {
           "type": "object",
-          "properties": {
-            "home": {"type": "string","enum": ["Blacklisted user"]}
-          },
+          "properties": {"home": {"type": "string","enum": ["Please Subscribe to Loyalty Program to use this application"]}},
           "required": ["home"]
         }
       },

@@ -3,17 +3,16 @@
 	<suite name="Scan and Pay">
 		<test name="API Validation" preserve-order="true" >
 			<classes>
-				<class name="core.testGetProfileBL" />
-				<class name="core.testItemLookupError" />
 				<class name="core.testAddItemToCartEH" />
 				<class name="core.testAuditCartsEH" />
-
-				<class name="core.testRemoveItemEH" />
-				<class name="core.testClubPriceLookUpEH" />
-				<class name="core.testGetReceiptEH" />
-				<class name="core.testFeedBackEH" />
 				<class name="core.testAuditCartsEH" />
 				<class name="core.testClearCartEH" />
+				<class name="core.testClubPriceLookUpEH" />
+				<class name="core.testFeedBackEH" />
+				<class name="core.testGetProfileBL" />
+				<class name="core.testGetReceiptEH" />
+				<class name="core.testItemLookupError" />
+				<class name="core.testRemoveItemEH" />
 			</classes>
 	</test>
 </suite>

@@ -51,7 +51,7 @@ public class testAddItemToCartEH {
 	@Test(dataProvider = "scenarios", dataProviderClass = DataFeed.class, enabled = true, priority = 1, description = "API Validation addItemToCart Error Handling")
 	@Description("<b>URI: </b> https://retail-api.azure-api.net/ <br />" + "<b>Port: </b> 443 <br />"
 			+ "<b>Environment: </b> QA [scanandgoQaJS] <br />")
-	public void schemaGetProfileEH(String testcase) throws Exception {
+	public void schemaAddItemToCartEH(String testcase) throws Exception {
 
 		String scenario = testcase;
 
