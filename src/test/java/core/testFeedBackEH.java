@@ -17,7 +17,7 @@ public class testFeedBackEH {
 	String environment = null;
 	String config = "config.properties";
 	String api = "feedback";
-	String path = "feedBack";
+	String path = "feedback";
 
 	Utilities u = new Utilities();
 
