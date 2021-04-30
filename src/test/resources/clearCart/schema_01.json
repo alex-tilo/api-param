@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties":{ 
+    "ack":      {"type": "string", "enum":["1"]},
+    "category":      {"type": "string", "enum":["generic_error"]},
+    "message":  {"type": "string", "enum":["No cart found for this user"]},
+    "type": {"type": "string", "enum":["CLEAR_CART"]},
+    "vendor": {"type":"string", "enum":["SNG_Backend"]}
+   },
+    "required": ["ack","category","message", "type", "vendor"]
+}

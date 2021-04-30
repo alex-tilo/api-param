@@ -14,6 +14,11 @@
 				<class name="core.testCheckOutCart" />
 				<class name="core.testAddItemToCart" />
 				<class name="core.testGetReceipt" />
+
+				<class name="core.testRemoveItem" />
+				<class name="core.testClubPriceLookUp" />
+				<class name="core.testFeedBack" />
+				<class name="core.testClearCart" />
 			</classes>
 	</test>
 </suite>

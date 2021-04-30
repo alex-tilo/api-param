@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.testAddItemToCartEH">
+      <class name="core.testClearCart">
         <methods>
-          <include name="schemaGetProfileEH" invocation-numbers="3"/>
+          <include name="schemaClearCart"/>
         </methods>
-      </class> <!-- core.testAddItemToCartEH -->
+      </class> <!-- core.testClearCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

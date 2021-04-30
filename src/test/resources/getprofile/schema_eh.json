@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack":      {"type": "string", "enum": ["1"]},
+    "errors": {"type": "array","items": [
+        {
+          "type": "object",
+          "properties": {"code": {"type": "string", "enum": ["4000"]},
+            "message":  {"type": "string", "enum": ["Missing or invalid parameters in request body"]},
+            "type":     {"type": "string", "enum": ["Malformed request"]},
+            "category": {"type": "string", "enum": ["generic_error"]},
+            "vendor":   {"type": "string", "enum": ["Retail Operations Backend"]}
+          },
+          "required": ["code","message","type","category","vendor"]
+        }
+      ]
+    }
+  },
+  "required": ["ack","errors"]
+}

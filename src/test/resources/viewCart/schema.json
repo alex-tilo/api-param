@@ -164,8 +164,6 @@
       },
       "required": [
         "items",
-        "total_quantity",
-        "total_price",
         "time_stamp"
       ]
     },

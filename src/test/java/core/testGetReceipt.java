@@ -54,7 +54,7 @@ public class testGetReceipt {
 					"<b>Port: </b> 443 <br />" +
 					"<b>Environment: </b> QA [scanandgoqa]<br />"
 				)
-	public void schemaItemLookup() throws Exception {
+	public void schemaGetReceipt() throws Exception {
 		setup(config, environment);
 	    try {
 		response = given()

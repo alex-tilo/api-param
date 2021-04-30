@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack":      {"type": "string", "enum": ["1"]},
+    "errors": {"type": "array","items": [
+        {
+          "type": "object",
+          "properties": {
+            "code": {"type": "string", "enum": ["4004"]},
+            "message":  {"type": "string", "enum": ["Sorry something went wrong. Please restart the app and try again."]},
+            "type":     {"type": "string", "enum": ["SNG_database_error"]},
+            "category": {"type": "string", "enum": ["receipt_not_found"]},
+            "vendor":   {"type": "string", "enum": ["SNG Backend"]}
+          },
+          "required": ["code","message","type","category","vendor"]
+        }
+      ]
+    }
+  },
+  "required": ["ack","errors"]
+}

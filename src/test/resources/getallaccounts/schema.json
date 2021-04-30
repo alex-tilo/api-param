@@ -141,7 +141,7 @@
     "ack":              {"type": "string", "enum": ["0"]},
     "hrLimitReached":   {"type": "boolean", "enum": [false]},
     "defaultCard":      {"type": "string"},
-    "applePayFlag":     {"type": "boolean", "enum": [true]}
+    "applePayFlag":     {"type": "boolean", "enum": [false]}
   },
   "required": ["accounts","ack","hrLimitReached","defaultCard","applePayFlag"]
 }
