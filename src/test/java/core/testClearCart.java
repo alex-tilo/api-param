@@ -56,13 +56,13 @@
 			setup(config, environment);
 		    try {
 			response = given()
-					.headers(u.readJSONFileAsMap(path, "header"))
+					.headers(u.readJSONFileAsMap(path.toLowerCase(), "header"))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))	
 					.header("oktatoken", u.getToken("access_token"))	
 					.filter(new AllureRestAssured())
 			
 			.when()
-					.put("/" + api);
+					.put("/" + api.toLowerCase());
 
 			response.then()
 					.log().headers()

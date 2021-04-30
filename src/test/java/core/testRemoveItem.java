@@ -16,7 +16,7 @@
 		
 		String environment 	= null;
 		String config 		= "config.properties";
-		String api 			= "removeitems";
+		String api 			= "removeitem";
 		String path 		= "removeitem";
 		
 		Utilities u = new Utilities();

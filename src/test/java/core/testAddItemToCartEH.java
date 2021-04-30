@@ -60,11 +60,16 @@ public class testAddItemToCartEH {
 			response = given().headers(u.readJSONFileAsMap(path, "header_" + scenario))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))
 					.header("oktatoken", u.getToken("access_token"))
-					.body(u.readJSONFile(api, "payload_" + scenario + ".json")).filter(new AllureRestAssured())
+					.body(u.readJSONFile(api.toLowerCase(), "payload_" + scenario + ".json")).filter(new AllureRestAssured())
 
 					.when().put("/" + api);
 
-			response.then().log().headers().log().body().assertThat()
+			response.then()
+					.log()
+					.headers()
+					.log()
+					.body()
+					.assertThat()
 					.time(lessThan(Long.valueOf(timeout)), TimeUnit.MILLISECONDS).and()
 //					.statusCode(200)
 //					.statusCode(400)

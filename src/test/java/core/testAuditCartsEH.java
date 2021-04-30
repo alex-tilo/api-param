@@ -65,15 +65,20 @@ public class testAuditCartsEH {
 		setup(config, environment);
 		try {
 			response = given()
-					.headers(u.readJSONFileAsMap(path, "header"))
+					.headers(u.readJSONFileAsMap(path.toLowerCase(), "header"))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))
 					.header("oktatoken", u.getToken("access_token"))
 					.queryParams(u.readJSONFileAsMap(path, "params_" + scenario))
 					.filter(new AllureRestAssured())
 
-					.when().get("/" + api);
+					.when().get("/" + api.toLowerCase());
 
-			response.then().log().headers().log().body().assertThat()
+			response.then()
+					.log()
+					.headers()
+					.log()
+					.body()
+					.assertThat()
 					.time(lessThan(Long.valueOf(timeout)), TimeUnit.MILLISECONDS).and()
 					// .statusCode(200)
 					.and().header("Content-Length", Integer::parseInt, lessThan(1000)).and()

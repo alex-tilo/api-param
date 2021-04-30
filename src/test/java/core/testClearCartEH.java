@@ -61,13 +61,18 @@ public class testClearCartEH {
 		String scenario = testcase;
 		setup(config, environment);
 		try {
-			response = given().headers(u.readJSONFileAsMap(path, "header_" + scenario))
+			response = given().headers(u.readJSONFileAsMap(path.toLowerCase(), "header_" + scenario))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))
 					.header("oktatoken", u.getToken("access_token")).filter(new AllureRestAssured())
 
-					.when().put("/" + api);
+					.when().put("/" + api.toLowerCase());
 
-			response.then().log().headers().log().body().assertThat()
+			response.then()
+					.log()
+					.headers()
+					.log()
+					.body()
+					.assertThat()
 					.time(lessThan(Long.valueOf(timeout)), TimeUnit.MILLISECONDS).and()
 					// .statusCode(200)
 					.and().header("Content-Length", Integer::parseInt, lessThan(2000)).and()

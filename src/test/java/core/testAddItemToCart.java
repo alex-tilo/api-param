@@ -16,8 +16,8 @@
 		
 		String environment 	= null;
 		String config 		= "config.properties";
-		String api 			= "addItemtocart";
-		String path 		= "addItemtocart";
+		String api 			= "additemtocart";
+		String path 		= "additemtocart";
 		
 		Utilities u = new Utilities();
 		
@@ -56,14 +56,14 @@
 			setup(config, environment);
 		    try {
 			response = given()
-					.headers(u.readJSONFileAsMap(path, "header"))
+					.headers(u.readJSONFileAsMap(path.toLowerCase(), "header"))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))	
 					.header("oktatoken", u.getToken("access_token"))	
-					.body(u.readJSONFileAsString(api))
+					.body(u.readJSONFileAsString(api.toLowerCase()))
 					.filter(new AllureRestAssured())
 			
 			.when()
-					.put("/" + api);
+					.put("/" + api.toLowerCase());
 
 			response.then()
 					.log().headers()
