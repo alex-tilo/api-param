@@ -1,0 +1,41 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"ack": {
+			"type": "string",
+			"enum": [
+				"0"
+			]
+		},
+		"message": {
+			"type": "string",
+			"enum": [
+				"Cart not found"
+			]
+		},
+		"category": {
+			"type": "string",
+			"enum": ["cart_not_found"]
+		},
+		"data": {
+			"type": "object",
+			"required": [
+				"guid",
+				"store_id",
+				"items"
+			],
+			"properties":{
+			   "guid": {"type":"string"},
+			   "store_id":{"type":"string"},
+			   "items":{"type":"array", "items":[{}]}
+			}
+		}
+		},
+		"required": [
+			"ack",
+			"message",
+			"category",
+			"data"
+		]
+	}
