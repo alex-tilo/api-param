@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4366" started-at="2021-04-30T15:30:03 PDT" finished-at="2021-04-30T15:30:08 PDT">
+  <suite name="Default suite" duration-ms="6208" started-at="2021-05-03T14:59:19 PDT" finished-at="2021-05-03T14:59:26 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4366" started-at="2021-04-30T15:30:03 PDT" finished-at="2021-04-30T15:30:08 PDT">
-      <class name="core.testCheckOutCart">
-        <test-method status="PASS" signature="schemaItemLookup()[pri:1, instance:core.testCheckOutCart@47428937]" name="schemaItemLookup" duration-ms="4228" started-at="2021-04-30T15:30:03 PDT" description="API Validation checkOutCart" finished-at="2021-04-30T15:30:08 PDT">
+    <test name="Default test" duration-ms="6208" started-at="2021-05-03T14:59:19 PDT" finished-at="2021-05-03T14:59:26 PDT">
+      <class name="core.testViewCartEH">
+        <test-method status="PASS" signature="schemaViewCartEH(java.lang.String)[pri:1, instance:core.testViewCartEH@302fec27]" name="schemaViewCartEH" duration-ms="4031" started-at="2021-05-03T14:59:20 PDT" description="API Validation schemaViewCart api" data-provider="scenarios" finished-at="2021-05-03T14:59:24 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_01]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaItemLookup -->
-      </class> <!-- core.testCheckOutCart -->
+        </test-method> <!-- schemaViewCartEH -->
+        <test-method status="PASS" signature="schemaViewCartEH(java.lang.String)[pri:1, instance:core.testViewCartEH@302fec27]" name="schemaViewCartEH" duration-ms="2021" started-at="2021-05-03T14:59:24 PDT" description="API Validation schemaViewCart api" data-provider="scenarios" finished-at="2021-05-03T14:59:26 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eh_02]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaViewCartEH -->
+      </class> <!-- core.testViewCartEH -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
