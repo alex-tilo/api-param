@@ -3,7 +3,7 @@
   "type": "object",
   "properties":{ 
     "ack":      {"type": "string", "enum":["1"]},
-    "message":  {"type": "string", "enum":["Receipt Not Audited"]}
+    "message":  {"type": "string", "enum":["Invalid req body"]}
    },
     "required": ["ack","message"]
 }
