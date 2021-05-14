@@ -24,7 +24,7 @@
 		String environment 	= null;
 		String config 		= "config.properties";
 		String api 			= "itemlookup";
-		String path 		= "itemLookupch";
+		String path 		= "itemlookupch";
 		
 		Utilities u = new Utilities();
 		

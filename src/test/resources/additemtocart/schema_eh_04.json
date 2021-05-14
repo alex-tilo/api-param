@@ -4,7 +4,7 @@
   "properties": {
     "ack":      {"type": "string", "enum": ["0"]},
     "code":     {"type": "string", "enum": ["2000"]},
-    "message":  {"type": "string", "enum": ["Item Added to Cart Successfuly"]},
+    "message":  {"type": "string", "enum": ["Successfuly updated Item"]},
     "vendor":   {"type": "string", "enum": ["Scan_and_pay"]},
     "category": {"type": "string", "enum": ["generic_response"]}
   },
