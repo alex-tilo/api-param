@@ -55,6 +55,11 @@ public class Utilities {
         return new String(Files.readAllBytes(Paths.get(path + "/" + token + ext))).trim();
     }
 
+    public String getBearerToken(String token) throws Exception {
+    	String path = System.getProperty("user.dir");
+    	String ext = ".txt";
+        return "Bearer " + new String(Files.readAllBytes(Paths.get(path + "/" + token + ext))).trim();
+    }
 
     public void writeConfig(String url, String port, String env, String timeout, int statusCode) {
     System.out.println();

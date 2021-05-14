@@ -1,35 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6208" started-at="2021-05-03T14:59:19 PDT" finished-at="2021-05-03T14:59:26 PDT">
+  <suite name="Default suite" duration-ms="12577" started-at="2021-05-14T16:29:00 PDT" finished-at="2021-05-14T16:29:13 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6208" started-at="2021-05-03T14:59:19 PDT" finished-at="2021-05-03T14:59:26 PDT">
-      <class name="core.testViewCartEH">
-        <test-method status="PASS" signature="schemaViewCartEH(java.lang.String)[pri:1, instance:core.testViewCartEH@302fec27]" name="schemaViewCartEH" duration-ms="4031" started-at="2021-05-03T14:59:20 PDT" description="API Validation schemaViewCart api" data-provider="scenarios" finished-at="2021-05-03T14:59:24 PDT">
+    <test name="Default test" duration-ms="12577" started-at="2021-05-14T16:29:00 PDT" finished-at="2021-05-14T16:29:13 PDT">
+      <class name="core.testItemLookupParam">
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="9748" started-at="2021-05-14T16:29:00 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:10 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[eh_01]]>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000031]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaViewCartEH -->
-        <test-method status="PASS" signature="schemaViewCartEH(java.lang.String)[pri:1, instance:core.testViewCartEH@302fec27]" name="schemaViewCartEH" duration-ms="2021" started-at="2021-05-03T14:59:24 PDT" description="API Validation schemaViewCart api" data-provider="scenarios" finished-at="2021-05-03T14:59:26 PDT">
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="565" started-at="2021-05-14T16:29:10 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:11 PDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[eh_02]]>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000032]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- schemaViewCartEH -->
-      </class> <!-- core.testViewCartEH -->
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="402" started-at="2021-05-14T16:29:11 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:11 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000033]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="176" started-at="2021-05-14T16:29:11 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:11 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000034]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="405" started-at="2021-05-14T16:29:11 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:12 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000035]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="391" started-at="2021-05-14T16:29:12 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:12 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000036]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="197" started-at="2021-05-14T16:29:12 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:12 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000037]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="357" started-at="2021-05-14T16:29:12 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:13 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000038]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+        <test-method status="PASS" signature="schemaItemLookupParam(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:core.testItemLookupParam@59aa20b3]" name="schemaItemLookupParam" duration-ms="163" started-at="2021-05-14T16:29:13 PDT" description="API Validation ItemLookup" data-provider="itemLookup" finished-at="2021-05-14T16:29:13 PDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9611]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[UPCA]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0070847000039]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaItemLookupParam -->
+      </class> <!-- core.testItemLookupParam -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

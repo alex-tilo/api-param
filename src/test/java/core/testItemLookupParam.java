@@ -61,7 +61,7 @@ public class testItemLookupParam {
 		return al.iterator();
 }
 
-    @Test(dataProvider="itemLookup", enabled = true, priority = 1, description = "API Validation ItemLookup")
+    @Test(dataProvider="itemLookup", enabled = true, priority = 1, description = "API Validation ItemLookup Param")
 	@Description(
 					"<b>URI: </b> https://retail-api.azure-api.net/ <br />" + 
 					"<b>Port: </b> 443 <br />" +

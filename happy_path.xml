@@ -9,6 +9,8 @@
 				<class name="core.testGetProfileBL" />
 				<class name="core.testViewCart" />
 				<class name="core.testItemLookup" />
+				<class name="core.testItemLookupParam" />
+				
 				<class name="core.testClubPriceLookUp" />
 				<class name="core.testAddItemToCart" />
 				<class name="core.testClearCart" />
@@ -18,6 +20,10 @@
 				<class name="core.testRemoveItem" />
 				<class name="core.testGetReceipt" />
 				<class name="core.testFeedBack" />
+
+				<class name="core.testDigitalReceiptsClubCard" />
+				<class name="core.testDigitalReceiptsID" />
+				<class name="core.testDigitalReceiptsIDParam" />
 			</classes>
 	</test>
 </suite>

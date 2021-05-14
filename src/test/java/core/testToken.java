@@ -1,4 +1,4 @@
-package core;
+ package core;
 
 import io.qameta.allure.*;
 import io.qameta.allure.restassured.AllureRestAssured;
@@ -79,6 +79,8 @@ public class testToken {
 		String id_token = response.path("id_token");
 		u.write2File("access_token.txt", access_token);
 		u.write2File("id_token.txt", id_token);
+		u.write2File("access_token_ztp.txt", access_token);
+		u.write2File("id_token_ztp.txt", id_token);
 	    }
     	catch (Exception e) {e.printStackTrace();}
 	    

@@ -60,8 +60,7 @@ public class testFeedBackEH {
 			response = given().headers(u.readJSONFileAsMap(path.toLowerCase(), "header"))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))
 					.header("oktatoken", u.getToken("access_token"))
-					.body(u.readJSONFile(api, "payload_" + scenario + ".json"))
-					.filter(new AllureRestAssured())
+					.body(u.readJSONFile(api, "payload_" + scenario + ".json")).filter(new AllureRestAssured())
 					.when().post("/" + api.toLowerCase());
 
 			response.then()
