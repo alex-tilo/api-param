@@ -13,6 +13,10 @@
 				<class name="core.testGetReceiptEH" />
 				<class name="core.testItemLookupError" />
 				<class name="core.testRemoveItemEH" />
+
+				<class name="core.testViewCartEH" />
+				<class name="core.testItemLookUpEH" />
+				<class name="core.testItemLookUpCH" />
 			</classes>
 	</test>
 </suite>

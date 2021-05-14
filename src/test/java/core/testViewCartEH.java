@@ -16,8 +16,8 @@ public class testViewCartEH {
 
 	String environment = null;
 	String config = "config.properties";
-	String api = "viewCart";
-	String path = "viewCart";
+	String api = "viewcart";
+	String path = "viewcart";
 
 	Utilities u = new Utilities();
 

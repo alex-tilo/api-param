@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ack": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "pos_description": {
+          "type": "string"
+        },
+        "ext_description": {
+          "type": "string"
+        },
+        "sell_multiple": {
+          "type": "integer"
+        },
+        "sell_price": {
+          "type": "number"
+        },
+        "crv": {
+          "type": "integer"
+        },
+        "link_code": {
+          "type": "null"
+        },
+        "food_stamp": {
+          "type": "boolean"
+        },
+        "restricted_item": {
+          "type": "boolean"
+        },
+        "ewic": {
+          "type": "boolean"
+        },
+        "weight_item": {
+          "type": "boolean"
+        },
+        "dept": {
+          "type": "integer"
+        },
+        "tax_item": {
+          "type": "boolean"
+        },
+        "club_item": {
+          "type": "boolean"
+        },
+        "smic": {
+          "type": "integer"
+        },
+        "store_id": {
+          "type": "string"
+        },
+        "points_apply": {
+          "type": "boolean"
+        },
+        "non_discountable": {
+          "type": "boolean"
+        },
+        "image_url": {
+          "type": "string"
+        },
+        "regular_price": {
+          "type": "number"
+        },
+        "scan_code": {
+          "type": "string"
+        },
+        "upc_type": {
+          "type": "string"
+        },
+        "strikeThroughPrice": {
+          "type": "boolean"
+        },
+        "clubPrice": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "item_id",
+        "sku",
+        "pos_description",
+        "ext_description",
+        "sell_multiple",
+        "sell_price",
+        "crv_item",
+        "link_code",
+        "food_stamp",
+        "restricted_item",
+        "ewic",
+        "weight_item",
+        "dept",
+        "tax_item",
+        "club_item",
+        "smic",
+        "store_id",
+        "points_apply",
+        "non_discountable",
+        "image_url",
+        "regular_price",
+        "scan_code",
+        "upc_type",
+        "strikeThroughPrice",
+        "clubPrice"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "ack",
+    "data",
+    "message"
+  ]
+}
