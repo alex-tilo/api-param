@@ -49,7 +49,7 @@ public class testDigitalReceiptsIDParam {
 			RestAssured.port 		= Integer.parseInt(port);
 	}
 	
-	@DataProvider(name = "itemLookup")
+	@DataProvider(name = "digitalReceipts")
 	public Iterator<String[]> data_provider() throws IOException {
 		String csv = "";
 		String[] a = null;
@@ -61,8 +61,7 @@ public class testDigitalReceiptsIDParam {
 		br.close();
 		return al.iterator();
 }
-
-	@Test(enabled = true, priority = 1, description = "API Validation Digital Receipts ID Param")
+    @Test(dataProvider="digitalReceipts", enabled = true, priority = 1, description = "API Validation Digital Receipts ID Param")
 	@Description(
 					"<b>URI: </b> https://www-qa2.safeway.com/ <br />" + 
 					"<b>Port: </b> 443 <br />" +
