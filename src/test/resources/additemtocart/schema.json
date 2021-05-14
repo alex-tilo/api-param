@@ -5,7 +5,7 @@
     "ack":      {"type": "string", "enum": ["0"]},
     "code":     {"type": "string", "enum": ["2000"]},
     "message":  {"type": "string"},
-    "vendor":   {"type": "string", "enum": ["Scan_and_go"]},
+    "vendor":   {"type": "string", "enum": ["Scan_and_pay"]},
     "category": {"type": "string", "enum": ["generic_response"]}
   },
   "required": ["ack","code","message","vendor","category"]

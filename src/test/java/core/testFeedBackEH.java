@@ -57,14 +57,19 @@ public class testFeedBackEH {
 
 		setup(config, environment);
 		try {
-			response = given().headers(u.readJSONFileAsMap(path, "header"))
+			response = given().headers(u.readJSONFileAsMap(path.toLowerCase(), "header"))
 					.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key"))
 					.header("oktatoken", u.getToken("access_token"))
-					.body(u.readJSONFile(api, "payload_" + scenario + ".json")).filter(new AllureRestAssured())
-					//.body(matchesJsonSchemaInClasspath(path + "/bodySchema.json"))
-					.when().post("/" + api);
+					.body(u.readJSONFile(api, "payload_" + scenario + ".json"))
+					.filter(new AllureRestAssured())
+					.when().post("/" + api.toLowerCase());
 
-			response.then().log().headers().log().body().assertThat()
+			response.then()
+					.log()
+					.headers()
+					.log()
+					.body()
+					.assertThat()
 					.time(lessThan(Long.valueOf(timeout)), TimeUnit.MILLISECONDS).and()
 //					.statusCode(200)
 //					.statusCode(400)
