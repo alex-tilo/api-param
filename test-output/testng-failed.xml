@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="core.testDigitalReceiptsID">
+      <class name="core.testDigitalReceiptsIDParam">
         <methods>
-          <include name="schemaItemLookup"/>
+          <include name="schemaDigitalReceiptsID" invocation-numbers="1 2"/>
         </methods>
-      </class> <!-- core.testDigitalReceiptsID -->
+      </class> <!-- core.testDigitalReceiptsIDParam -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

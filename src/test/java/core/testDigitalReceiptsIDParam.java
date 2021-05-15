@@ -67,7 +67,8 @@ public class testDigitalReceiptsIDParam {
 					"<b>Port: </b> 443 <br />" +
 					"<b>Environment: </b> QA<br />"
 				)
-	public void schemaDigitalReceiptsID() throws Exception {
+    public void schemaDigitalReceiptsID (String receipts_id) throws Exception {
+
 		setup(config, environment);
 		System.out.println(u.getBearerToken("access_token_ztp"));
 	    try {
@@ -75,7 +76,7 @@ public class testDigitalReceiptsIDParam {
 				.headers(u.readJSONFileAsMap(path, "header"))
 				.header("Ocp-Apim-Subscription-key", u.getKey("Ocp-Apim-Subscription-key_ztp"))	
 				.header("Authorization", u.getBearerToken("access_token_ztp"))
-				.queryParams(u.readJSONFileAsMap(path, "params_id"))
+				.queryParam("id", receipts_id)
 				.filter(new AllureRestAssured())
 		
 		.when()

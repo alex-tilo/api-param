@@ -357,15 +357,7 @@
                   "required": [
                     "type",
                     "typeCode",
-                    "amount",
-                    "cardType",
-                    "creditDebit",
-                    "cardNumber",
-                    "cashBack",
-                    "authorizationCode",
-                    "referenceNumber",
-                    "authorizationDate",
-                    "authorizationTime"
+                    "amount"
                   ]
                 }
               ]
