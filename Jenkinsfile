@@ -23,7 +23,6 @@ pipeline {
         stage('API Testing') {
             steps {
                 sh "mvn clean site -Dsuite=${params.scenario}.xml -Denv=${params.environment}"
-                sh "echo ${env.BRANCH_SHORT_NAME}"
                 script {
                     allure([
                         includeProperties: false,
