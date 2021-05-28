@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>core</groupId>
-	<artifactId>API</artifactId>
+	<artifactId>scgo-api-automation</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>API</name>
+	<name>scgo-api-automation</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

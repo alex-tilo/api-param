@@ -20,7 +20,7 @@
         },
         "message": {
           "type": "object",
-          "properties": {"home": {"type": "string","enum": ["Please call customer service at <877-723-3929> for more information on your account access"]}},
+          "properties": {"home": {"type": "string","enum": ["Please Subscribe to Loyalty Program to use this application"]}},
           "required": ["home"]
         }
       },
