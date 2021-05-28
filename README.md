@@ -24,3 +24,4 @@ In project exist 2 kind of reports:
 
 - [Allure](http://allure.qatools.ru/) report. An open-source framework designed to create test execution reports clear to everyone in the team.
 
+Good
