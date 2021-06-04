@@ -8,9 +8,134 @@
         {
           "type": "object",
           "properties": {
-            "fdAccountId": {"type": "string"},
-            "type": {"type": "string", "enum": ["CREDIT"]},
-            "status": {"type": "string", "enum": ["ACTIVE"]},
+            "fdAccountId": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "credit": {
+              "type": "object",
+              "properties": {
+                "nameOnCard": {
+                  "type": "string"
+                },
+                "alias": {
+                  "type": "string"
+                },
+                "cardType": {
+                  "type": "string"
+                },
+                "billingAddress": {
+                  "type": "object",
+                  "properties": {
+                    "postalCode": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "postalCode"
+                  ]
+                },
+                "expiryDate": {
+                  "type": "object",
+                  "properties": {
+                    "month": {
+                      "type": "string"
+                    },
+                    "year": {
+                      "type": "string"
+                    },
+                    "singleValue": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "month",
+                    "year",
+                    "singleValue"
+                  ]
+                },
+                "token": {
+                  "type": "object",
+                  "properties": {
+                    "tokenType": {
+                      "type": "string"
+                    },
+                    "tokenProvider": {
+                      "type": "string"
+                    },
+                    "tokenId": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "tokenType",
+                    "tokenProvider",
+                    "tokenId"
+                  ]
+                }
+              },
+              "required": [
+                "nameOnCard",
+                "alias",
+                "cardType",
+                "billingAddress",
+                "expiryDate",
+                "token"
+              ]
+            },
+            "token": {
+              "type": "object",
+              "properties": {
+                "tokenType": {
+                  "type": "string"
+                },
+                "tokenProvider": {
+                  "type": "string"
+                },
+                "tokenId": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "tokenType",
+                "tokenProvider",
+                "tokenId"
+              ]
+            },
+            "dateCreated": {
+              "type": "string"
+            },
+            "dateModified": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "fdAccountId",
+            "type",
+            "status",
+            "credit",
+            "token",
+            "dateCreated",
+            "dateModified"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "fdAccountId": {
+              "type": "string"
+            },
+            "type": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
             "credit": {
               "type": "object",
               "properties": {
@@ -114,7 +239,10 @@
                       "type": "string"
                     }
                   },
-                  "required": ["name","value"]
+                  "required": [
+                    "name",
+                    "value"
+                  ]
                 }
               ]
             },
@@ -138,11 +266,18 @@
         }
       ]
     },
-    "ack":              {"type": "string", "enum": ["0"]},
-    "hrLimitReached":   {"type": "boolean", "enum": [false]},
-    "defaultCard":      {"type": "string"},
-    "applePayFlag":     {"type": "boolean", "enum": [false]}
+    "ack": {
+      "type": "string"
+    },
+    "hrLimitReached": {
+      "type": "boolean"
+    },
+    "defaultCard": {
+      "type": "string"
+    },
+    "applePayFlag": {
+      "type": "boolean"
+    }
   },
   "required": ["accounts","ack","hrLimitReached","defaultCard","applePayFlag"]
 }
-
