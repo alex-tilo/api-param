@@ -60,7 +60,7 @@ pipeline {
         failure {
             script {
                 emailext (
-                    subject: "SCGO API test report - Job Failed"
+                    subject: "SCGO API test report - Job Failed",
                     to: "${emailList}"
                 )
             }
