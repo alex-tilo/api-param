@@ -3,9 +3,7 @@
   "type": "object",
   "properties": {
     "ack": {
-      "type": "string",
-      "pattern": "(0|1)"
-    },
+      "type": "string","pattern": "(0|1)"},
     "data": {
       "type": "object",
       "properties": {
@@ -26,9 +24,6 @@
         },
         "sell_price": {
           "type": "number"
-        },
-        "crv": {
-          "type": "integer"
         },
         "link_code": {
           "type": "null"
@@ -60,17 +55,11 @@
         "store_id": {
           "type": "string"
         },
-        "bpn_no": {
-          "type": "null"
-        },
         "points_apply": {
           "type": "boolean"
         },
         "non_discountable": {
           "type": "boolean"
-        },
-        "sellby_unit": {
-          "type": "string"
         },
         "image_url": {
           "type": "string"
@@ -84,18 +73,12 @@
         "upc_type": {
           "type": "string"
         },
-        "sellByWeight": {
-          "type": "string"
-        },
         "strikeThroughPrice": {
           "type": "boolean"
         },
         "clubPrice": {
           "type": "array",
           "items": {}
-        },
-        "jfuOfferCount": {
-          "type": "integer"
         }
       },
       "required": [
@@ -105,7 +88,6 @@
         "ext_description",
         "sell_multiple",
         "sell_price",
-        // "crv",
         "link_code",
         "food_stamp",
         "restricted_item",
@@ -116,18 +98,14 @@
         "club_item",
         "smic",
         "store_id",
-        // "bpn_no",
         "points_apply",
         "non_discountable",
-        // "sellby_unit",
         "image_url",
         "regular_price",
         "scan_code",
         "upc_type",
-        // "sellByWeight",
         "strikeThroughPrice",
-        "clubPrice",
-        "jfuOfferCount"
+        "clubPrice"
       ]
     },
     "message": {
@@ -135,7 +113,8 @@
     }
   },
   "required": [
-    "ack"
+    "ack",
+    "data",
+    "message"
   ]
 }
-

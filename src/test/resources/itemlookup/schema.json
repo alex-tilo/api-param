@@ -2,8 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "properties": {
-    "ack": {
-      "type": "string","pattern": "(0|1)"},
+    "ack": {"type": "string"},
     "data": {
       "type": "object",
       "properties": {
@@ -25,8 +24,11 @@
         "sell_price": {
           "type": "number"
         },
+        "crv": {
+          "type": "integer"
+        },
         "link_code": {
-          "type": "null"
+          "type": "string"
         },
         "food_stamp": {
           "type": "boolean"
@@ -55,11 +57,8 @@
         "store_id": {
           "type": "string"
         },
-        "points_apply": {
-          "type": "boolean"
-        },
-        "non_discountable": {
-          "type": "boolean"
+        "bpn_no": {
+          "type": "string"
         },
         "image_url": {
           "type": "string"
@@ -73,12 +72,66 @@
         "upc_type": {
           "type": "string"
         },
+        "promoOfferPrice": {
+          "type": "number"
+        },
         "strikeThroughPrice": {
           "type": "boolean"
         },
         "clubPrice": {
           "type": "array",
-          "items": {}
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "promoFactor": {
+                  "type": "string"
+                },
+                "promoMethod": {
+                  "type": "string"
+                },
+                "promoPrice": {
+                  "type": "number"
+                },
+                "promoMaxQty": {
+                  "type": "integer"
+                },
+                "promoMinQty": {
+                  "type": "integer"
+                },
+                "cms_flag": {
+                  "type": "boolean"
+                },
+                "rawOfferPrice": {
+                  "type": "number"
+                },
+                "offerMessage": {
+                  "type": "string"
+                },
+                "offerMsg1": {
+                  "type": "string"
+                },
+                "saved": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "promoFactor",
+                "promoMethod",
+                "promoPrice",
+                "promoMaxQty",
+                "promoMinQty",
+                "cms_flag",
+                "rawOfferPrice",
+                "offerMessage",
+                "offerMsg1",
+                "saved"
+              ]
+            }
+          ]
+        },
+        "jfuOfferCount": {
+          "type": "integer"
         }
       },
       "required": [
@@ -88,6 +141,7 @@
         "ext_description",
         "sell_multiple",
         "sell_price",
+        "crv",
         "link_code",
         "food_stamp",
         "restricted_item",
@@ -98,14 +152,15 @@
         "club_item",
         "smic",
         "store_id",
-        "points_apply",
-        "non_discountable",
+        "bpn_no",
         "image_url",
         "regular_price",
         "scan_code",
         "upc_type",
+        "promoOfferPrice",
         "strikeThroughPrice",
-        "clubPrice"
+        "clubPrice",
+        "jfuOfferCount"
       ]
     },
     "message": {
