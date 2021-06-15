@@ -1,3 +1,4 @@
+emailList="""Alex.Tilov@albertsons.com"""
 pipeline {
     agent { node { label 'pcf-build-node' } }
     parameters {
@@ -32,6 +33,36 @@ pipeline {
                         results: [[path: 'target/allure-results']]
                     ])
                 }
+            }
+        }
+    }
+    post {
+        success {
+            script {
+                emailext (
+                    subject: "SCGO API test report",
+                    body: '${SCRIPT,template="allure-report.groovy"}',
+                    mimeType: 'text/html',
+                    to: "${emailList}"
+                )
+            }
+        }
+        unstable {
+            script {
+                emailext (
+                    subject: "SCGO API test report",
+                    body: '${SCRIPT,template="allure-report.groovy"}',
+                    mimeType: 'text/html',
+                    to: "${emailList}"
+                )
+            }
+        }
+        failure {
+            script {
+                emailext (
+                    subject: "SCGO API test report - Job Failed",
+                    to: "${emailList}"
+                )
             }
         }
     }
