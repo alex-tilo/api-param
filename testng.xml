@@ -1,9 +1,9 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-	<suite name="Scan and Pay">
+	<suite name="QA">
 		<test name="API Validation" preserve-order="true" >
 			<classes>
-				<class name="core.testItemLookup" />
+				<class name="core.testParam" />
 			</classes>
 	</test>
 </suite>

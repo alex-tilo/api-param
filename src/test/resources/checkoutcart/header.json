@@ -1,9 +1,0 @@
-{
-  "Accept": 			"application/json",
-  "Accept-Language": 	"en-US;q=1.0, ru-US;q=0.9",
-  "app": 				"sng",
-  "guid": 				"557-065-1599248997721",
-  "platform": 			"ios",
-  "storeid": 			"9611",
-  "User-Agent": 		"UCheckout/2.01 (com.safeway.scanandgoent; build:1; iOS 14.3.0) Alamofire/4.9.0"
-}

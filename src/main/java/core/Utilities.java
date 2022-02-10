@@ -25,13 +25,6 @@ public class Utilities {
         return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload + ext)));
     }
     
-    public String readJSONFileAsStringEH(String api) throws Exception {
-    	String path = "src/test/resources";
-    	String payload = "payload_bl";
-    	String ext = ".json";
-        return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload + ext)));
-    }
-    
     public String readJSONFile(String api, String payload) throws Exception {
     	String path = "src/test/resources";
         return new String(Files.readAllBytes(Paths.get(path + "/" + api + "/" + payload)));
@@ -61,12 +54,11 @@ public class Utilities {
         return "Bearer " + new String(Files.readAllBytes(Paths.get(path + "/" + token + ext))).trim();
     }
 
-    public void writeConfig(String url, String port, String env, String timeout, int statusCode) {
+    public void writeConfig(String url, String port, String timeout, int statusCode) {
     System.out.println();
     System.out.println("===============================================");
     System.out.println("URI:\t\t" 			+ url);
     System.out.println("Port:\t\t" 			+ port);
-    System.out.println("Environment:\t" 	+ env);
     System.out.println("Timeout:\t" 		+ timeout);
     System.out.println("Status Code:\t" 	+ statusCode);
     System.out.println("===============================================");
@@ -77,8 +69,13 @@ public class Utilities {
     		    BufferedWriter writer = new BufferedWriter(new FileWriter(path + "/" + fileName, false));
     		    writer.write(str); writer.close();
     		}
+    public void writeFileAppend(String fileName, String str) throws IOException {
+		String path = System.getProperty("user.dir");
+	    BufferedWriter writer = new BufferedWriter(new FileWriter(path + "/" + fileName, true));
+	    writer.write(str); writer.close();
+	}
     public void write2File(String fileName, String str) throws IOException {
-    	String path = System.getProperty("user.dir");
-        Files.write( Paths.get(path + "/" + fileName), str.getBytes());
+    			String path = System.getProperty("user.dir");
+    			Files.write( Paths.get(path + "/" + fileName), str.getBytes());
 	}
 }

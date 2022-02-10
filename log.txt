@@ -1,0 +1,3 @@
+ID: 01; Actual: John Smith; Expected: John Smith; Actual: 210000; Expected: 210000; Actual: 50; Expected: 50
+ID: 02; Actual: Mike Loomis; Expected: Mike Loomis; Actual: 180000; Expected: 180000; Actual: 34; Expected: 34
+ID: 03; Actual: Christina Tilov; Expected: Christina Tilov; Actual: 125000; Expected: 125000; Actual: 24; Expected: 24

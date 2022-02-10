@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>core</groupId>
-	<artifactId>scgo-api-automation</artifactId>
+	<artifactId>api-param</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 
-	<name>scgo-api-automation</name>
+	<name>api-param</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -153,8 +153,8 @@
 				<version>${surefire.version}</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>${suite}</suiteXmlFile>
-						<!-- <suiteXmlFile>testng.xml</suiteXmlFile> -->
+						<!-- <suiteXmlFile>${suite}</suiteXmlFile>  -->
+						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
