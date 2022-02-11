@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9147" started-at="2022-02-10T18:06:05 PST" finished-at="2022-02-10T18:06:14 PST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9147" started-at="2022-02-10T18:06:05 PST" finished-at="2022-02-10T18:06:14 PST">
+      <class name="core.testParam2">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:core.testParam2@411341bd]" name="beforeClass" is-config="true" duration-ms="23" started-at="2022-02-10T18:06:05 PST" finished-at="2022-02-10T18:06:05 PST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="schemaParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:core.testParam2@411341bd]" name="schemaParam" duration-ms="7504" started-at="2022-02-10T18:06:05 PST" description="API Validation" data-provider="param" finished-at="2022-02-10T18:06:12 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[01]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John Smith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[210000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaParam -->
+        <test-method status="PASS" signature="schemaParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:core.testParam2@411341bd]" name="schemaParam" duration-ms="651" started-at="2022-02-10T18:06:12 PST" description="API Validation" data-provider="param" finished-at="2022-02-10T18:06:13 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[02]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mike Loomis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[180000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaParam -->
+        <test-method status="PASS" signature="schemaParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:core.testParam2@411341bd]" name="schemaParam" duration-ms="769" started-at="2022-02-10T18:06:13 PST" description="API Validation" data-provider="param" finished-at="2022-02-10T18:06:14 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[03]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Christina Tilov]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[125000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- schemaParam -->
+      </class> <!-- core.testParam2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
