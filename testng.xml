@@ -3,7 +3,7 @@
 	<suite name="QA">
 		<test name="API Validation" preserve-order="true" >
 			<classes>
-				<class name="core.testParam" />
+				<class name="core.testParam2" />
 			</classes>
 	</test>
 </suite>

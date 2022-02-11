@@ -57,11 +57,17 @@ public class testParam2 {
 		br.close();
 		return al.iterator();
 }
-
-    @Test(dataProvider="param", enabled = true, priority = 1, description = "API Validation")
+	@TmsLink("380")
+	@Issue("SIG-536")
+	@Link(name = "A-A", url="http://alex.academy",type = "Trello")
+    
+	@Test(dataProvider="param", enabled = true, priority = 1, description = "API Validation")
 	@Description("<b>Test: </b><br />")
     public void schemaParam (String id, String name, String salary, String age) throws Exception {
 		setup(config);
+		
+//        Allure.addLinks(new Link().withName("STACKOVERFLOW LINK")
+//                .withUrl("https://stackoverflow.com/"));
 		
 		original_content = u.readJSONFileAsString(api);	
 		modified_content = original_content
